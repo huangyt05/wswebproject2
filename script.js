@@ -39,10 +39,10 @@ $('document').ready(function(){
 
 		if (frameClass === 'col-1') {
 			// Alice
-			var student = ['memo/memo1.html=true'];
+			var student = ['https://huangyt05.github.io/wswebproject2/memo/memo1.html=true'];
 		} else if (frameClass === 'col-2') {
 			// Brent
-			var student = ['https://docs.google.com/document/d/17zYzLzzn8I_-lv3mfIEM5Hi8SK22CdGCcdwbLH_-9_0/pub?embedded=true'];
+			var student = ['https://huangyt05.github.io/wswebproject2/memo/memo2.html=true'];
 		} else if (frameClass === 'col-3') {
 			// Carina
 			var student = ['https://docs.google.com/document/d/16D0vVJruughseDZZBTaFqpV8bVgNoZUJGIPA4uOP0OI/pub?embedded=true'];
