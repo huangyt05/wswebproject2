@@ -19,7 +19,7 @@ $('document').ready(function(){
 	$('body').append(cont);
 	$('body').append(info);
 
-	$('#info').append('<iframe src="memo\memo1.html=true=true"></iframe>');
+	$('#info').append('<iframe src="memo/memo1.html=true"></iframe>');
 
 	$('.column').mouseenter(function(){
 		$(this).css('height', '100vh');
@@ -39,10 +39,10 @@ $('document').ready(function(){
 
 		if (frameClass === 'col-1') {
 			// Alice
-			var student = ['https://huangyt05.github.io/wswebproject2/memo/memo1.html=true'];
+			var student = ['memo/memo1.html'];
 		} else if (frameClass === 'col-2') {
 			// Brent
-			var student = ['https://huangyt05.github.io/wswebproject2/memo/memo2.html=true'];
+			var student = ['memo/memo2.html'];
 		} else if (frameClass === 'col-3') {
 			// Carina
 			var student = ['https://docs.google.com/document/d/16D0vVJruughseDZZBTaFqpV8bVgNoZUJGIPA4uOP0OI/pub?embedded=true'];

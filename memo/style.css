@@ -152,6 +152,7 @@ body{
 h2{
     text-align: right;
     z-index: 2;
+    background-color: rgb(255, 0, 0);
 }
 .six>img{
     grid-row: 5/6;
