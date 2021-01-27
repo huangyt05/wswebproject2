@@ -35,6 +35,26 @@ iframe {
 	font-family: serif;
 	color: orangered;
 	font-size: 18px;
+}
 
+.image {
+	margin:0 auto;
+	display: block;
+    width: 50vw;
+	height: 5vh;
+	transition: 1s;
+
+}
+
+#expand {
+	margin:0 auto;
+	display: block;
+    position: fixed;
+	width: 50vw;
+	height: 50vh;
+	transition: 1s;
+	font-family: serif;
+	color: orangered;
+	font-size: 18px;
 }
 

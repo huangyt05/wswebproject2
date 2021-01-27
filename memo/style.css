@@ -19,10 +19,6 @@ main{
 .page{
     width:45vw;
     height:50vh;
-    /* padding: 15px; */
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    scroll-snap-align: center;
 }
 h1{
     font-size: 2rem;

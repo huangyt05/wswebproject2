@@ -6,31 +6,54 @@ $('document').ready(function(){
 	var i;
 
 	var klas = 'column';
+	var clas = 'image';
 	var ide;
 
-	for (i = 0; i < 23; i++) {
+	for (i = 0; i < 12; i++) {
 		var getal = i + 1;
 		var ide = 'col-' + getal; 
 		cont[i] = '<div id="' + ide + '" class="' + klas + '"><iframe class="' + ide + '"></iframe></div>';
 	}
-
+	
+	for (i = 13; i < 23; i++) {
+		var getal = i + 1;
+		var ide = 'col-' + getal; 
+		cont[i] = '<div id="' + ide + '" class="' + clas + '"><iframe class="' + ide + '"></iframe></div>';
+	}
 	var info = '<div id="info"></div>';
+	var expand = '<div id="expand"></div>';
 
 	$('body').append(cont);
 	$('body').append(info);
 
 	$('#info').append('<iframe src="memo/memo1.html"></iframe>');
+	$('#info').append('<iframe src="img/IMG_0145.PNG"></iframe>');
 
 	$('.column').mouseenter(function(){
 		$(this).css('height', '50vh');
 		$('#info').css('height', '5vh');
+		$('.image').css('transform', 'translate(0, 0)');
+		$('#expand').css('transform', 'translate(120px, 0)');
 	});
 	$('.column').mouseleave(function(){
 		$(this).css('height', '5vh');
 		$('#info').css('height', '50vh');
+		$('.image').css('transform', 'translate(0, 0)');
+		$('#expand').css('transform', 'translate(120px, 0)');
 	});
 
-
+	// $('.image').mouseenter(function(){
+	// 	$(this).css('left', '20vw');
+	// 	$('#expand').css('right', '20vw');
+	// 	$(this).css('transform', 'translate(0, 0)');
+	// 	$('#expand').css('transform', 'translate(120px, 0)');
+	// });
+	// $('.image').mouseleave(function(){
+	// 	$(this).css('right', '20vw');
+	// 	$('#expand').css('left', '20vw');
+	// 	$(this).css('height', '50vh');
+	// 	$('#expand').css('height', '5vh');
+	// });
 	$('.column').css('width', 0.5*hoogte);
 	$('#info').css('width', 0.5*hoogte);
 
@@ -39,76 +62,60 @@ $('document').ready(function(){
 		var frameClass = $(this).attr('class');
 
 		if (frameClass === 'col-1') {
-			// Alice
 			var student = ['memo/memo1.html'];
 		} else if (frameClass === 'col-2') {
-			// Brent
 			var student = ['memo/memo2.html'];
 		} else if (frameClass === 'col-3') {
-			// Carina
 			var student = ['memo/memo3.html'];
 		} else if (frameClass === 'col-4') {
-			// Christophe
 			var student = ['memo/memo4.html'];
 		} else if (frameClass === 'col-5') {
-			// Cyril
 			var student = ['memo/memo5.html'];
 		} else if (frameClass === 'col-6') {
-			// Dirk
 			var student = ['memo/memo6.html'];
 		} else if (frameClass === 'col-7') {
-			// Eduardo
 			var student = ['memo/memo7.html'];
 		} else if (frameClass === 'col-8') {
-			// Elisabeth
 			var student = ['memo/memo8.html'];
 		} else if (frameClass === 'col-9') {
-			// Fallon
 			var student = ['memo/memo9.html'];
 		} else if (frameClass === 'col-10') {
-			// Gustav
 			var student = ['memo/memo10.html'];
 		} else if (frameClass === 'col-11') {
-			// Inna
 			var student = ['memo/memo11.html'];
 		} else if (frameClass === 'col-12') {
-			// Jan
-			var student = ['https://docs.google.com/document/d/1s0esHvLIyP5yzeJfrOCabOzbtMocXVLZplkeCvcOSX0/pub?embedded=true'];
+			var student = ['img/IMG_0145.PNG'];
 		} else if (frameClass === 'col-13') {
-			// Leonie
-			var student = ['https://docs.google.com/document/d/15_2woPS8Y_09fqMtr28ADGK30DYtuu80PWS4qu7wyns/pub?embedded=true'];
+			var student = ['img/IMG_0163.JPEG'];
 		} else if (frameClass === 'col-14') {
-			// Melisa
-			var student = ['https://docs.google.com/document/d/14AgoJrgAi0YVe6uycuTJaRlWiGJsFH18iVuqw7bccsM/pub?embedded=true'];
+			var student = ['img/IMG_0176.JPG'];
 		} else if (frameClass === 'col-15') {
-			// Nico
-			var student = ['https://docs.google.com/document/d/1c-1ggT0utewVSXECcnF8DckNmWX_PlhGRIpupJaLbEQ/pub?embedded=true'];
+			var student = ['img/IMG_0177.JPG'];
 		} else if (frameClass === 'col-16') {
-			// Nina
-			var student = ['https://docs.google.com/document/d/1eIbpFL4VOnMvWOfuyszNrCuAsi6HH5NHaf6g4MMcTOI/pub?embedded=true'];
+			var student = ['img/IMG_0178.JPG'];
 		} else if (frameClass === 'col-17') {
-			// Rodrigo
-			var student = ['https://docs.google.com/document/d/1tWmmsuMmIIvC7Ev74OFCVZsgNqkRwHJ-J87vStJh8fc/pub?embedded=true'];
+			var student = ['img/IMG_4713.JPEG'];
 		} else if (frameClass === 'col-18') {
-			// Sophie
-			var student = ['https://docs.google.com/document/d/1InDpVelyw0jOI491EHyoXAij-y4ymLJRLXVWYwmhKYA/pub?embedded=true'];
+			var student = ['img/IMG_4715.JPG'];
 		} else if (frameClass === 'col-19') {
-			// Steinarr
-			var student = ['https://docs.google.com/document/d/1cuifZ3SltWilNw1oaWYYULY5o_DBxh1GhMF4smesvz8/pub?embedded=true'];
+			var student = ['img/IMG_4725.JPG'];
 		} else if (frameClass === 'col-20') {
-			// Steven
-			var student = ['https://docs.google.com/document/d/1pk9e94aClxq-6wF5qzzGg-YOmaH6UxXExWR80iSogaI/pub?embedded=true'];
+			var student = ['img/IMG_4729.JPEG'];
 		} else if (frameClass === 'col-21') {
-			// Vera
-			var student = ['https://docs.google.com/document/d/1o47Ko8unZyEjTGbi6UYwBDjV190DUp--qBt3VO6F_oo/pub?embedded=true'];
+			var student = ['img/IMG_4757.JPEG'];
 		} else if (frameClass === 'col-22') {
-			// Victoria
-			var student = ['https://docs.google.com/document/d/13-xZds1kZ59LLfNPB8G-MRO3HtW27HdWrqYxdiA5Wxc/pub?embedded=true'];
+			var student = ['img/IMG_4790.JPG'];
 		} else if (frameClass === 'col-23') {
-			// Zgjim
-			var student = ['https://docs.google.com/document/d/103TDJgt6X3uJ9Gx9Z2ysdMQOZTjcr_84HfJB4Hq0zpU/pub?embedded=true'];
+			var student = ['img/IMG_4835.JPEG'];
 		}
-		
+		for(i = 0; i < 23; i++){
+			if(cont>12){
+				$('body').append(image);
+				$('body').append(expand);
+				$(this).attr('position', 'static');
+				$(this).attr('left', '20vw');
+			}
+		}
 		$(this).attr('src', student);
         // $(this).attr('data', page);
 	});
