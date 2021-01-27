@@ -19,19 +19,20 @@ $('document').ready(function(){
 	$('body').append(cont);
 	$('body').append(info);
 
-	$('#info').append('<iframe src="memo/memo1.html=true"></iframe>');
+	$('#info').append('<iframe src="memo/memo1.html"></iframe>');
 
 	$('.column').mouseenter(function(){
-		$(this).css('height', '100vh');
+		$(this).css('height', '50vh');
 		$('#info').css('height', '5vh');
 	});
 	$('.column').mouseleave(function(){
 		$(this).css('height', '5vh');
-		$('#info').css('height', '100vh');
+		$('#info').css('height', '50vh');
 	});
 
-	$('.column').css('width', 0.9*hoogte);
-	$('#info').css('width', 0.9*hoogte);
+
+	$('.column').css('width', 0.5*hoogte);
+	$('#info').css('width', 0.5*hoogte);
 
 	$('iframe').each(function(){
 		
@@ -45,31 +46,31 @@ $('document').ready(function(){
 			var student = ['memo/memo2.html'];
 		} else if (frameClass === 'col-3') {
 			// Carina
-			var student = ['https://docs.google.com/document/d/16D0vVJruughseDZZBTaFqpV8bVgNoZUJGIPA4uOP0OI/pub?embedded=true'];
+			var student = ['memo/memo3.html'];
 		} else if (frameClass === 'col-4') {
 			// Christophe
-			var student = ['https://docs.google.com/document/d/1xGwdzCcq4E5YDMeaYuvosTF_1fwJAnKaRughWsvTM7g/pub?embedded=true'];
+			var student = ['memo/memo4.html'];
 		} else if (frameClass === 'col-5') {
 			// Cyril
-			var student = ['https://docs.google.com/document/d/1LjUfOh1RXU0mzgUvO3WpQ8HW9ji7bzJ7rUtPfKFKIrI/pub?embedded=true'];
+			var student = ['memo/memo5.html'];
 		} else if (frameClass === 'col-6') {
 			// Dirk
-			var student = ['https://docs.google.com/document/d/1nv_MVor9U-u_QsOHM6RBInmDbksGtQP19DnMXjT26Kw/pub?embedded=true'];
+			var student = ['memo/memo6.html'];
 		} else if (frameClass === 'col-7') {
 			// Eduardo
-			var student = ['https://docs.google.com/document/d/1UjGmM_gbQXFWec1Ady5b00ABvkRQN-zz-6cETGL2VKU/pub?embedded=true'];
+			var student = ['memo/memo7.html'];
 		} else if (frameClass === 'col-8') {
 			// Elisabeth
-			var student = ['https://docs.google.com/document/d/1U_FUMru_Q_pk9nwkxZ4hnsSlv6DO9HzRrQm_eKMvowY/pub?embedded=true'];
+			var student = ['memo/memo8.html'];
 		} else if (frameClass === 'col-9') {
 			// Fallon
-			var student = ['https://docs.google.com/document/d/1OOLLoNt3AwYK20BabCK3zK9l6w2al1KTI-8aWFOnxMc/pub?embedded=true'];
+			var student = ['memo/memo9.html'];
 		} else if (frameClass === 'col-10') {
 			// Gustav
-			var student = ['https://docs.google.com/document/d/1hzeDldz0VlGR9VkGKXCgKzldzx9CmhyZoS5-uB1m_GI/pub?embedded=true'];
+			var student = ['memo/memo10.html'];
 		} else if (frameClass === 'col-11') {
 			// Inna
-			var student = ['https://docs.google.com/document/d/1a2u_Yx-EnTay-X3MrD3VpAvCyrwxg-G9ZUN3TjKUOqo/pub?embedded=true'];
+			var student = ['memo/memo11.html'];
 		} else if (frameClass === 'col-12') {
 			// Jan
 			var student = ['https://docs.google.com/document/d/1s0esHvLIyP5yzeJfrOCabOzbtMocXVLZplkeCvcOSX0/pub?embedded=true'];

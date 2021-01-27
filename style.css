@@ -3,24 +3,30 @@
 }
 
 body {
-margin: 10vw;
+text-align: center;
 background-color: antiquewhite;
+
 }
 
 iframe {
+	
 	border: 0;
 	width: 100%;
 	height: 100%;
+
 }
 
 .column {
+	margin:0 auto;
 	display: block;
     width: 100vw;
 	height: 5vh;
 	transition: 1s;
+
 }
 
 #info {
+	margin:0 auto;
 	display: block;
     position: fixed;
 	width: 100vw;
@@ -29,5 +35,6 @@ iframe {
 	font-family: serif;
 	color: orangered;
 	font-size: 18px;
+
 }
 
