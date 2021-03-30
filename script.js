@@ -83,10 +83,8 @@ $('document').ready(function(){
 			var student = ['memo/memo10.html'];
 		} else if (frameClass === 'col-11') {
 			var student = ['memo/memo11.html'];
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		} 
+
+		
 		
 		// for(i = 0; i < 22; i++){
 		// 	if(cont>11){
@@ -94,11 +92,7 @@ $('document').ready(function(){
 		// 		$('body').append(expand);
 		// 	}
 		// }
-=======
-=======
->>>>>>> parent of 7930774 (Update script.js)
-=======
->>>>>>> parent of 7930774 (Update script.js)
+
 		} else if (frameClass === 'col-12') {
 			var student = ['img/IMG_0145.PNG'];
 		} else if (frameClass === 'col-13') {
@@ -124,8 +118,7 @@ $('document').ready(function(){
 		} else if (frameClass === 'col-23') {
 			var student = ['img/IMG_4835.JPEG'];
 		}
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		for(i = 0; i < 23; i++){
 			if(cont>12){
 				$('body').append(image);
@@ -134,20 +127,14 @@ $('document').ready(function(){
 				$(this).attr('left', '20vw');
 			}
 		}
->>>>>>> parent of f914e25 (1)
-=======
-=======
->>>>>>> parent of 7930774 (Update script.js)
+
 		for(i = 0; i < 22; i++){
 			if(cont>11){
 				$('body').append(image);
 				$('body').append(expand);
 			}
 		}
-<<<<<<< HEAD
->>>>>>> parent of 7930774 (Update script.js)
-=======
->>>>>>> parent of 7930774 (Update script.js)
+
 		$(this).attr('src', student);
         // $(this).attr('data', page);
 	});
