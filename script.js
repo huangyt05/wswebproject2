@@ -15,48 +15,31 @@ $('document').ready(function(){
 		cont[i] = '<div id="' + ide + '" class="' + klas + '"><iframe class="' + ide + '"></iframe></div>';
 	}
 	
-	for (i = 12; i < 22; i++) {
+	for (i = 13; i < 23; i++) {
 		var getal = i + 1;
 		var ide = 'col-' + getal; 
 		cont[i] = '<div id="' + ide + '" class="' + clas + '"><img class="' + ide + '"></img></div>';
 	}
 	var info = '<div id="info"></div>';
 	var expand = '<div id="expand"></div>';
-	var container = '<div id="container"></div>';
+
+	$('body').append(cont);
 	$('body').append(info);
-	
-	$('body').append(container);
-	
-	for (i = 12; i < 22; i++) {
-		$('#container').append(cont[i]);
-	}
-	for (i = 0; i < 12; i++) {
-		$('body').append(cont[i]);
-	}
-	//$('#info').append('<iframe src="memo/memo1.html"></iframe>');
-	//$('#info').append('<iframe src="img/IMG_0145.PNG"></iframe>');
-	$('#container').css('display', 'flex');
-	$('#container').css('width', '100vw');
-	$('#container').css('position', 'absolute');
-	$('#container').css('flex-direction', 'column');
-	$('#container').css('justify-content', 'center');
-	$('#container').css('z-index', '-1');
+
+	$('#info').append('<iframe src="memo/memo1.html"></iframe>');
+	$('#info').append('<iframe src="img/IMG_0145.PNG"></iframe>');
 
 	$('.column').mouseenter(function(){
 		$(this).css('height', '50vh');
 		$('#info').css('height', '5vh');
-		$('.image').css('height', '50vh');
-		$('#expand').css('height', '5vh');
-		$('.image').css('transform', 'translate(25vh, 0)');
-		$('#expand').css('transform', 'translate(0, 0)');
+		$('.image').css('transform', 'translate(0, 0)');
+		$('#expand').css('transform', 'translate(120px, 0)');
 	});
 	$('.column').mouseleave(function(){
 		$(this).css('height', '5vh');
 		$('#info').css('height', '50vh');
-		$('.image').css('height', '5vh');
-		$('#expand').css('height', '50vh');
 		$('.image').css('transform', 'translate(0, 0)');
-		$('#expand').css('transform', 'translate(25vh, 0)');
+		$('#expand').css('transform', 'translate(120px, 0)');
 	});
 
 	// $('.image').mouseenter(function(){
@@ -139,6 +122,8 @@ $('document').ready(function(){
 			if(cont>12){
 				$('body').append(image);
 				$('body').append(expand);
+				$(this).attr('position', 'static');
+				$(this).attr('left', '20vw');
 			}
 		}
 >>>>>>> parent of f914e25 (1)
