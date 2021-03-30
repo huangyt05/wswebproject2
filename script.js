@@ -18,7 +18,7 @@ $('document').ready(function(){
 	for (i = 13; i < 23; i++) {
 		var getal = i + 1;
 		var ide = 'col-' + getal; 
-		cont[i] = '<div id="' + ide + '" class="' + clas + '"><img class="' + ide + '"></img></div>';
+		cont[i] = '<div id="' + ide + '" class="' + clas + '"><iframe class="' + ide + '"></iframe></div>';
 	}
 	var info = '<div id="info"></div>';
 	var expand = '<div id="expand"></div>';
@@ -84,6 +84,7 @@ $('document').ready(function(){
 		} else if (frameClass === 'col-11') {
 			var student = ['memo/memo11.html'];
 <<<<<<< HEAD
+<<<<<<< HEAD
 		} 
 		
 		// for(i = 0; i < 22; i++){
@@ -93,6 +94,8 @@ $('document').ready(function(){
 		// 	}
 		// }
 =======
+=======
+>>>>>>> parent of 7930774 (Update script.js)
 		} else if (frameClass === 'col-12') {
 			var student = ['img/IMG_0145.PNG'];
 		} else if (frameClass === 'col-13') {
@@ -118,6 +121,7 @@ $('document').ready(function(){
 		} else if (frameClass === 'col-23') {
 			var student = ['img/IMG_4835.JPEG'];
 		}
+<<<<<<< HEAD
 		for(i = 0; i < 23; i++){
 			if(cont>12){
 				$('body').append(image);
@@ -127,43 +131,16 @@ $('document').ready(function(){
 			}
 		}
 >>>>>>> parent of f914e25 (1)
+=======
+		for(i = 0; i < 22; i++){
+			if(cont>11){
+				$('body').append(image);
+				$('body').append(expand);
+			}
+		}
+>>>>>>> parent of 7930774 (Update script.js)
 		$(this).attr('src', student);
         // $(this).attr('data', page);
 	});
 
-	$('img').each(function(){
-
-		var frameClass = $(this).attr('class');
-
-	if (frameClass === 'col-12') {
-		var student = ['img/IMG_0145.PNG'];
-	} else if (frameClass === 'col-13') {
-		var student = ['img/IMG_0163.JPEG'];
-	} else if (frameClass === 'col-14') {
-		var student = ['img/IMG_0176.JPG'];
-	} else if (frameClass === 'col-15') {
-		var student = ['img/IMG_0177.JPG'];
-	} else if (frameClass === 'col-16') {
-		var student = ['img/IMG_0178.JPG'];
-	} else if (frameClass === 'col-17') {
-		var student = ['img/IMG_4713.JPEG'];
-	} else if (frameClass === 'col-18') {
-		var student = ['img/IMG_4715.JPG'];
-	} else if (frameClass === 'col-19') {
-		var student = ['img/IMG_4725.JPG'];
-	} else if (frameClass === 'col-20') {
-		var student = ['img/IMG_4729.JPEG'];
-	} else if (frameClass === 'col-21') {
-		var student = ['img/IMG_4757.JPEG'];
-	} else if (frameClass === 'col-22') {
-		var student = ['img/IMG_4790.JPG'];
-	} else if (frameClass === 'col-23') {
-		var student = ['img/IMG_4835.JPEG'];
-	}
-	$(this).attr('src', student);
-	$(this).css('max-width', '50vw');
-	$(this).css('max-height', '50vh');
-	$(this).css('max-width', $(this).pare);
-	$(this).css=$(this).parent().css;
-	});
 });
